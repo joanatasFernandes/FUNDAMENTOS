@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Display Flex</title>
+        <style>
+
+            body{
+                margin: 0;
+                background-color: black;
+                color: white;
+            }
+            .caixa{
+                background-color: crimson ;
+                border: 2px solid white;
+                padding: 20px;
+                font-size: 30px;
+                /*height: 200px;*/
+                /*width: 200px;*/ /*o strech não faz efeito com tamaho*/
+            }
+
+            .externa{
+                height: 500px;
+                display: flex;
+                border: 5px solid yellow;
+                display: flex;
+                flex-direction: column; /*Define o eixo Coluna*/
+                justify-content: space-around; /*Posiciona no eixo Coluna*/
+                align-items: start; /*Posiciona no eixo cruzado*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="externa">
+            <div class="caixa">#1</div>
+            <div class="caixa">#2</div>
+            <div class="caixa">#3</div>
+        </div>
+       
+    </body>
+</html>
